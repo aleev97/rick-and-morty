@@ -1,0 +1,6 @@
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 69, 87);
+    padding: "25px"
+}  
