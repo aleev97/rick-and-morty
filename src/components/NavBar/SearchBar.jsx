@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./NavBar";
+import style from "./SearchBar.module.css"
 
 export default function SearchBar(props) {
    const[text,setText] = useState("");
@@ -10,9 +10,9 @@ export default function SearchBar(props) {
    }
  
    return (
-      <div className={style.search}>
-         <input type='search' value={text} onChange = {handleChange} />
-      <button onClick={()=> props.onSearch(text)}>Agregar</button>
+      <div>
+         <input className={style.inp} type='search' value={text} onChange = {handleChange} />
+      <button className={style.botagregar} onClick={()=> props.onSearch(text)}>Agregar</button>
       </div>
    );
 }

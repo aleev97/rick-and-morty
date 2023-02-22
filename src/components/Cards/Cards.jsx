@@ -2,6 +2,7 @@ import Card from './Card/Card';
 import React from 'react';
 import styles from "./cards.module.css";
 //import { useParams } from 'react-router-dom';
+
 export default function Cards(props) {
    const { characters, onClose } = props;
    
