@@ -27,8 +27,8 @@ function App () {
       !access && navigate('/');
    }, [access]);
 
-  function onSearch(text) {
-    fetch(`https://rickandmortyapi.com/api/character/${text}`)
+  function onSearch(character) {
+    fetch(`http://localhost:3001/rickandmorty/character/${character}`) //numero que entra por input: text
       .then((response) => response.json())
       .then((data) => { 
         if (data.name) {
