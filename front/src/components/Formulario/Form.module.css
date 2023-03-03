@@ -1,0 +1,67 @@
+/* Estilos para formulario */
+
+.container{
+	width:300px;
+	padding:30px;
+	border-radius:10px;
+    margin-top: 90px;
+    margin-left: 400px;
+	background-color:#86ecf34d;
+    border: 2px solid #00e1ff;
+}
+
+.label1{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+    color: rgb(255, 255, 255);
+}
+
+.input1{
+	width:180px;
+	padding:3px 10px;
+	border:2px solid #000000;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:15px 0;
+	display:inline-block;
+}
+
+.label2{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+    color: rgb(255, 255, 255);
+}
+
+.input2{
+	width:180px;
+	padding:3px 10px;
+	border:2px solid #000000;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:8px 0;
+    margin-left: 7px;
+	display:inline-block;
+}
+
+.errUs{
+ font-weight:bold;
+ margin-top:-8px;   
+ color: #bd1010;
+ font-size:15px;
+}
+
+.errPas{
+ font-weight:bold;
+ margin-top:-8px;  
+ color: #bd1010;
+ font-size:15px;
+}
+
+.boton{
+ padding:4px 15px;
+ margin-top: 15px;
+ border-radius: 5px;
+ background-color: rgba(238, 231, 137, 0.836);
+}

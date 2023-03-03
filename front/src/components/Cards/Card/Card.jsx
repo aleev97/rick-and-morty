@@ -37,9 +37,9 @@ export default function Card({ name, species, gender, image, onClose, id }) {
 
       {
         isFav ? (
-          <button onClick={handleFavorite}>❤️</button>
+          <button  className={styles.like1} onClick={handleFavorite}>❤️</button>
         ) : (
-          <button onClick={handleFavorite}>🤍</button>
+          <button className={styles.like2} onClick={handleFavorite}>🤍</button>
         )
       }
 

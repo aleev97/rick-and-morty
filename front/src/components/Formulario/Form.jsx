@@ -34,16 +34,16 @@ export default function Form({login}) {
     }
 
     return (
-        <form onSubmit ={handleSubmit}>
-            <label htmlFor="username">Usuario: </label>
-            <input type="text" name="username" value={userData.username} onChange={handleInputChange} />
-            {errors.username &&  <p>{errors.username}</p>}  {/*renderizo los errores*/}
+        <form className={styles.container} onSubmit ={handleSubmit}>
+            <label className={styles.label1} htmlFor="username">Usuario: </label>
+            <input className={styles.input1} type="text" name="username" value={userData.username} onChange={handleInputChange} />
+            {errors.username &&  <p className={styles.errUs} >{errors.username}</p>}  {/*renderizo los errores*/}
 
-            <label htmlFor="password">Password: </label>
-            <input type="password" name="password" value={useState.password} onChange={handleInputChange} />
-            {errors.password &&  <p>{errors.password}</p>} {/*renderizo los errores*/}
+            <label className={styles.label2} htmlFor="password">Password: </label>
+            <input className={styles.input2} type="password" name="password" value={useState.password} onChange={handleInputChange} />
+            {errors.password &&  <p className={styles.errPas} >{errors.password}</p>} {/*renderizo los errores*/}
 
-            <button>Login</button>
+            <button className={styles.boton} >Login</button>
         </form>
     )
 }

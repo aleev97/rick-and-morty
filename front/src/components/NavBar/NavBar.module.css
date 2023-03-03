@@ -1,34 +1,56 @@
 .contenedor {
-    justify-content: end;
-    background-color: rgb(48, 48, 48);
+    border-radius: 50px;
+    margin:auto; /* Centramos el Nav */
+    justify-content: center;
+    border: 2.5px solid #db1616;
+    background-color: rgba(3, 6, 179, 0.281);
     display:flexbox;
-    width: 100%;
+    margin-top: 25px;
+    width: 70%;
 }
 
 .home {
-    width: 5%;
-    color: black;
-    border-style:ridge;
+    font-family:cursive;
+    -webkit-text-stroke: 1.2px rgb(9, 105, 0);
+    font-size: 18px;
+    text-decoration-line: none;
+    font-weight:bold;
+    color: rgb(0, 255, 0);
+    width: 6%;
     position:absolute;
     margin-top: 2.5%;
     margin-left: 3%;
-    background-color: rgba(255, 0, 0, 0.527);
-    border-radius: 8%
 }
 
 .about {
+    font-family:cursive;
+    -webkit-text-stroke: 1.2px rgb(9, 105, 0);
+    font-size: 18px;
+    text-decoration-line: none;
+    font-weight:bold;
+    color: rgb(0, 255, 0);
     position:absolute;
     margin-top: 2.5%;
     margin-left: 9%;
-    width: 5%;
-    color: black;
-    border-style:ridge;
-    background-color: rgba(255, 0, 0, 0.527);
-    border-radius: 8%
+    width: 6%;
+}
+
+.favorite{
+    font-family:cursive;
+    -webkit-text-stroke: 1.2px rgb(9, 105, 0);
+    font-size: 18px;
+    text-decoration-line: none;
+    font-weight:bold;
+    color: rgb(0, 255, 0);
+    position:absolute;
+    margin-top: 2.5%;
+    margin-left: 15%;
+    width: 6%;
 }
 
 .logo {
     position:relative;
-    width: 6%;
-    margin-left:-85%;
+    width: 80px;
+    margin-left: -850px;
+    margin-top: 8px;
 }

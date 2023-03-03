@@ -1,24 +1,16 @@
-const http = require(`http`);
-const characters = require(`./utils/data`)
-
-http.createServer((req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-
-    if (req.url.includes("rickandmorty/character")) {
-      let id = req.url.split(`/`).at(-1);
-
-      let characterFilter = characters.find(char => char.id === Number(id))
-      
-      res
-      .writeHead(200, {"content-type": "application/json"})
-      .end(JSON.stringify(characterFilter))
-    }
-
-}).listen(3001, `localhost`)
+const express = require('express');
+const cors = require("cors");
+const server = express();
+const PORT = 3001;
+const router = require("./routes/index")
+const favsRouter = require("./routes/favsRouter");
 
 
+server.use(express.json()); // para que funcione mi cv con formato json
+server.use(cors()) //habilito a todos a hacerme solicitudes a mi servidor
+server.use("/rickandmorty/", router);
+server.use("/favs", favsRouter);
 
-
-
-
-
+server.listen(PORT, () => {
+  console.log('Server raised in port ' + PORT);
+});

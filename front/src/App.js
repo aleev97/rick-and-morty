@@ -25,16 +25,16 @@ function App () {
   }
     useEffect(() => {
       !access && navigate('/');
-   }, [access]);
+   }, [access])
 
   function onSearch(character) {
-    fetch(`http://localhost:3001/rickandmorty/character/${character}`) //numero que entra por input: text
+    fetch(`http://localhost:3001/rickandmorty/onsearch/${character}`) //numero que entra por input: text
       .then((response) => response.json())
       .then((data) => { 
         if (data.name) {
           setCharacters((oldChars) => [...oldChars, data]);
         } else {
-          window.alert('No hay personajes con ese ID');
+          alert('No hay personajes con ese ID');
         }
       }); 
   }
@@ -49,7 +49,7 @@ function App () {
        <Routes> 
         <Route path = "/home" element = {<Cards characters={characters} onClose ={onClose} />} />
         <Route path = "/about" element = {<About />} />
-        <Route path = "/detail/:detailId" element = {<Detail/>} />
+        <Route path = "/detail/:detailId" element = {<Detail/>} /> 
         <Route path = "/favorites" element ={<Favorites/>}/>       
        </Routes>
     </div>

@@ -5,14 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: bisque;
-  background-size: cover;
+  background-image: url(C:\Users\vaniv\OneDrive\Escritorio\Henry\rick-and-morty\back\src\fondo\fondo,png.jpg);
+  background-attachment: fixed;   /*esta propiedad permite que se haga scroll en eje y y la imagen de fonfo permanece fija
+  /* overflow: scroll; */         /*esta propiedad permite que se haga scroll en eje x y la imagen de fonfo permanece fija*/
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} 
- 
+}

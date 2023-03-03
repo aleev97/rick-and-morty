@@ -14,18 +14,19 @@ export default function Detail(props) {
     } 
     //MONTAJE y CUANDO CAMBIA ID
     useEffect(() => {
-        fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+        fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
           .then((response) => response.json())
           .then((char) => {
+            //llega la respuesta
             if (char.name) {
                 console.log(char);
               setInfo(char);
             } else {
-              window.alert("No hay personajes con ese ID");
+              alert("No hay personajes con ese ID");
             }
           })
           .catch((err) => {
-            window.alert("No hay personajes con ese ID");
+            alert("No hay personajes con ese ID");
           });
         
         //desmontaje

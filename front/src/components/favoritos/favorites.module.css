@@ -1,73 +1,75 @@
 .cardContainer {
-    background-color: rgba(217, 243, 174, 0.4);
-    border-radius: 20px;
-    margin-top: 15%;
-    margin-left: 15%;
-    width: 110%;
-    box-shadow: inset 10px -5px 38px 0.5px rgb(0, 247, 33);
-    border: 2.5px solid #bdffbb;
-
-  }
-
-  .buttonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.close{
-    position: relative;
-    background-color:rgb(247, 175, 18);
-    right: 2%;
-    height: 20px;
-    width: 35px;
-    border-radius: 50px;
-    margin-top:1% ;
+  background-color: rgba(255, 255, 255, 0.514);
+  border-radius: 18px;
+  margin-top: 28px;
+  margin-left: 550px;
+  width: 268px;
+  height: 290px;
+  box-shadow: 18px -15px 18px 0.5px rgb(0, 0, 0);
+  border: 3px solid #2da000;
 }
 
 .genero {
-    position: absolute;
-    margin:-0.2%;
-    margin-left:1.8%;
-    font-family:cursive;
-    font-size: 18px;
-    -webkit-text-stroke: 0.5px rgb(255, 56, 56);
-    color: black;
-  
-  }
-  
-  .especie{
-   position: absolute;
-   margin: -0.2%; 
-   margin-left:11%;
-   font-family:cursive;
-   font-size: 18px;
-   -webkit-text-stroke: 0.5px rgb(226, 24, 24);
-   color: black;
-  }
-  
-  .nombre {
-    position: relative;
-    margin:0%;
-    margin-left:0%;
-    border-radius: 4px;
-    font-family:cursive; 
-    font-size: 26px;
-    -webkit-text-stroke: 0.5px rgba(218, 18, 18, 0.87);
-    background-color: rgba(233, 219, 98, 0.5);
-    width:100%;
-  }
-  
-  .fondo{
-   max-width:80%;
-   border-radius: 8px;
-   margin-top: 11%;
-  } 
-  
-  .fondo:hover{
-      border-radius:60%;
-      -webkit-border-radius:50%;
-      box-shadow: 0px 0px 15px 15px #b86b35;
-      -webkit-box-shadow: 0px 0px 15px 15px #f7a4a4;
-      transform: rotate(360deg); 
-      }
+  position: absolute;
+  margin: -0.2%;
+  margin-left: 1.8%;
+  font-family: cursive;
+  font-size: 18px;
+  -webkit-text-stroke: 1px rgb(70, 1, 1);
+  color: red;
+}
+
+.especie {
+  position: absolute;
+  margin: -0.2%;
+  margin-left: 11%;
+  font-family: cursive;
+  font-size: 18px;
+  -webkit-text-stroke: 1px rgb(70, 1, 1);
+  color: red;
+}
+
+.nombre {
+  position: relative;
+  font-style: italic;
+  margin: auto;
+  font-family: cursive;
+  font-size: 26px;
+  -webkit-text-stroke: 1.5px rgba(16, 94, 0, 0.87);
+  color: rgb(49, 128, 26);
+  width: auto;
+}
+
+.fondo {
+  max-width: 210px;
+  border-radius: 8px;
+  margin-top: 28px;
+}
+
+.fondo:hover {
+  border: 1px solid #c6c9c67a;
+  box-shadow: 0 7px 30px 8px #39d609b9;
+  transform: scale(1.015);
+  filter: brightness(1.2);
+}
+
+.order{
+position: absolute;
+margin-left: -450px;
+margin-top:10px;
+background-color: rgb(29, 110, 5);
+border-radius: 4px;
+border:rgb(19, 68, 4);
+color: rgb(0, 0, 0);
+
+}
+
+.definition{
+background-color: rgb(29, 110, 5);
+position: absolute;
+margin-left: -320px;
+margin-top:10px;
+border-radius: 4px;
+border:rgb(19, 68, 4);
+color: rgb(0, 0, 0);
+}

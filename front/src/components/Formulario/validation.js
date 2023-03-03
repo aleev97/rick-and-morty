@@ -18,7 +18,7 @@ const validation = (userData) =>{
   }
   
   if(userData.password.length < 6 || userData.password.length > 10) {
-    errors.password = "la contraseña tiene que tener una longitud entre 6 y 10 caracteres"
+    errors.password = "la contraseña debe que tener una longitud entre 6 y 10 caracteres"
   }
   return errors;
 }

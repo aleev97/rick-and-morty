@@ -19,12 +19,12 @@ const Favorites = () => {
         <div>
 
             <div>
-                <select onChange={handlerOrder}>
+                <select className={styles.order} onChange={handlerOrder}>
                     <option value="Ascendente">Ascendente</option>
                     <option value="Descendente">Descendente</option>
                 </select>
 
-                <select onChange={handlerFilter}>
+                <select className={styles.definition} onChange={handlerFilter}>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Genderless">Genderless</option>
